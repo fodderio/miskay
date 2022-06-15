@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;400;700;900&display=swap');
+
+:root {
+  --pitchBlack: #000000;
+  --black: #333333;
+  --white: #ffffff;
+  --yellow: #f2cf0b;
+}
+
+
+
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a  {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4em 1.7em;
+}
+
+header .logo {
+  font-size: 1.9em;
+  letter-spacing: 5px;
+  font-weight: 900;
+
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5em;
+}
+
+header nav a  {
+  color: var(--black);
+  text-decoration: none;
+}
+
+header nav .dropdown {
+  display: flex;
+  align-items: center;
+}
+
+header nav .dropdown svg {
+  stroke: var(--black);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1em;
+}
+
+.header-buttons svg {
+  height: 1.6em;
+}
+
+/* LANDING PAGE */
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--black);
+  background-repeat: no-repeat;
+  background-image: url('./wallpaper.png');
+  background-size: cover;
+}
+
+.landing section {
+  text-align: center; 
+  background-color: rgba(0, 0, 0, 0.55);
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing section .landing-container {
+  max-width: 50rem;
+  margin: 4em auto 0;
+}
+
+.landing section h1 {
+  margin: 0;
+  font-size: 5em;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 2px;
+
+  color: var(--yellow);
+}
+
+.landing section p {
+  color: var(--white);
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+a.button {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: var(--white);
+  margin-top: 1em;
+  display: inline-block;
+  padding: 0.67em 1.5em;
+  background-color: var(--pitchBlack);
+  transition: all 300ms ease-out;
+}
+
+a.button:hover {
+  color: var(--pitchBlack);
+  background-color: var(--yellow);
+}
+
+
+/* CALLOUT */
+
+.callout {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.callout h2 {
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0;
+}
+
+.callout p {
+  margin: 0;
+  color: var(--yellow);
+  letter-spacing: 2px;
+  margin-bottom: 1em;
+}
+
+/* OPTIONS */
+
+.options {
+  background-color: var(--yellow);
+  height: 60vh;
+  padding: 7em 3em 2em;
+
+
+  display: flex;
+  gap: 1.3em;
+}
+
+.option {
+  position: relative;
+  margin: 0;
+}
+
+.option img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.option:hover img {
+  filter: blur(2px);
+}
+
+.option figcaption{
+  position: absolute;
+  font-weight: 700;
+  top: 40%;
+  z-index: 9;
+  left: 0.7em;
+  font-size: 2em;
+  color: var(--white);
+  transition: all 300ms;
+}
+
+.option:hover figcaption {  
+  top: 39%;
+}
+
+/* MISCELLANEOUS */
+
+.miscellaneous {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+
+  padding: 5em 0;
+}
+
+.miscellaneous figure  {
+  text-align: center;
+}
+
+.miscellaneous figure img {
+  width: 12em;
+  height: 12em;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.miscellaneous figure figcaption {
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-top: 1em;
+  font-weight: 600;
+}
+
+/* DISCOVER */
+
+.discover {
+  color: var(--black);
+  padding: 2em;
+  margin: 0 5em 2em;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 2px rgba(160, 124, 7, 0.35), -1px -2px 2px rgba(160, 124, 7, 0.35);
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2em;
+  margin-top: 6em;
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+.svg-icon {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: var(--pitchBlack);
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: var(--white);
+}
+
+.svg-icon circle {
+  fill: var(--white);
+  stroke-width: 2;
+}
+
+footer .icons {
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+footer .copyright {
+  margin-top: 2em;
+  letter-spacing: 3px;
+}
